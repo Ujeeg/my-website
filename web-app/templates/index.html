@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body class="font-poppins bg-gray-100 text-gray-800">
+
+<nav class="bg-white shadow-md py-4">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <a class="text-2xl font-bold text-gray-800" href="#">My Portfolio</a>
+    <div class="space-x-6">
+      <a class="hover:text-blue-500" href="#about">About</a>
+      <a class="hover:text-blue-500" href="#projects">Projects</a>
+      <a class="hover:text-blue-500" href="#skills">Skills</a>
+      <a class="hover:text-blue-500" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-blue-500 text-white py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl font-bold mb-4">Hello, I'm a Data Engineer</h1>
+    <p class="text-lg">Passionate about building data-driven solutions.</p>
+  </div>
+</header>
+
+<section class="py-20" id="about">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <img alt="Professional photo" class="w-96 h-96 rounded-full mx-auto object-cover shadow-lg" 
+             src="static/images/fajar_profile.jpg">
+      </div>
+      <div class="md:w-1/2 md:pl-16">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="mb-4">
+          I am a highly motivated individual currently on an exciting career transition journey.
+          My background in animal husbandry (non-IT) has instilled in me a strong work ethic, resilience, and analytical skills that I believe are transferable to the tech industry.
+        </p>
+        <p class="mb-4">
+          Currently, I am actively engaged in self-study and enrolled in a Data Engineer bootcamp at Pacmann to deepen my understanding of SQL, Python, Basic DevOps and data visualization. I am eager to apply these newfound skills in the real world and contribute to retail, agritech, e-commerce and fintech.
+        </p>
+        <p>
+          I am a fast learner, tenacious, and possess strong adaptability skills. I am always open to learning opportunities and collaborations.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-200 py-20" id="projects">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="project_1"> 
+            <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-200 hover:scale-105 cursor-pointer">
+              <img alt="Project 1" class="rounded-t-lg mb-4 w-full h-64 object-cover" 
+                   src="static/images/project_1/RoadMap.png">
+              <h3 class="text-xl font-bold mb-2">Project 1</h3>
+              <p class="text-gray-700">
+                The aim of this data engineering project is to create a robust ETL (Extract, Transform, Load) pipeline to process data from a GitHub data source (NY-Taxi-data), store it in a local PostgreSQL database, and subsequently load it into Google BigQuery for further analysis. This project involves collecting data from GitHub, transforming it into a suitable format, and efficiently storing it in both a local PostgreSQL database and Google BigQuery.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project2.html">
+            <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-200 hover:scale-105 cursor-pointer">
+              <img alt="Project 2" class="rounded-t-lg mb-4 w-full h-64 object-cover" 
+                   src="https://storage.googleapis.com/a1aa/image/5rhDlk3XFPqkN9mGmWG6ImOK0kVyfpPoiVAHXzfCpEW0ewDoA.jpg">
+              <h3 class="text-xl font-bold mb-2">Project 2</h3>
+              <p class="text-gray-700">
+                A brief description of Project 2, highlighting the key features and technologies used.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project3.html">
+            <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-200 hover:scale-105 cursor-pointer">
+              <img alt="Project 3" class="rounded-t-lg mb-4 w-full h-64 object-cover" 
+                   src="https://storage.googleapis.com/a1aa/image/XAi1jqOuDbqUMl9no1aCZi6GcoGqjNJfofMB36fSn2hl9wDoA.jpg">
+              <h3 class="text-xl font-bold mb-2">Project 3</h3>
+              <p class="text-gray-700">
+                A brief description of Project 3, highlighting the key features and technologies used.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project4.html">
+            <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-200 hover:scale-105 cursor-pointer">
+              <img alt="Project 4" class="rounded-t-lg mb-4 w-full h-64 object-cover" 
+                   src="https://storage.googleapis.com/a1aa/image/FwselPz6170XMSCqC0fuc5fBTGXy5Wl8L8pZlSjoIfw07hHQB.jpg">
+              <h3 class="text-xl font-bold mb-2">Project 4</h3>
+              <p class="text-gray-700">
+                A brief description of Project 4, highlighting the key features and technologies used.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="project5.html">
+            <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-200 hover:scale-105 cursor-pointer">
+              <img alt="Project 5" class="rounded-t-lg mb-4 w-full h-64 object-cover" 
+                   src="https://storage.googleapis.com/a1aa/image/OJpePc3sedmlwkr13QMeeBJefvBx9DNfkah3hdOYfvzL2ewDoA.jpg">
+              <h3 class="text-xl font-bold mb-2">Project 5</h3>
+              <p class="text-gray-700">
+                A brief description of Project 5, highlighting the key features and technologies used.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20" id="skills">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <i class="fas fa-code fa-3x text-blue-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Programming</h3>
+        <p class="text-gray-700">Python, SQL, Java</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <i class="fas fa-database fa-3x text-green-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Databases</h3>
+        <p class="text-gray-700">MySQL, PostgreSQL</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <i class="fas fa-server fa-3x text-red-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Big Data</h3>
+        <p class="text-gray-700">Spark, Hadoop</p> 
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <i class="fas fa-cloud fa-3x text-purple-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Cloud</h3>
+        <p class="text-gray-700">AWS, Google Cloud</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <i class="fas fa-exchange-alt fa-3x text-yellow-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">ETL</h3>
+        <p class="text-gray-700">Airflow, Talend, Prefect</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <i class="fas fa-warehouse fa-3x text-teal-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Warehousing</h3>
+        <p class="text-gray-700">Redshift, BigQuery</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center"> 
+        <i class="fas fa-tools fa-3x text-orange-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">DevOps</h3>
+        <p class="text-gray-700">Basic understanding</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <i class="fas fa-chart-bar fa-3x text-pink-500 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Visualization</h3>
+        <p class="text-gray-700">Tableau, Power BI (basic)</p> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-800 text-white py-20" id="contact">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Contact</h2>
+    <div class="max-w-lg mx-auto">
+      <form action="#" class="space-y-6">
+        <div>
+          <label class="block text-sm font-medium" for="name">Name</label>
+          <input class="w-full mt-1 p-3 border border-gray-600 rounded-md bg-gray-700 text-white" id="name" name="name" required="" type="text">
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="email">Email</label>
+          <input class="w-full mt-1 p-3 border border-gray-600 rounded-md bg-gray-700 text-white" id="email" name="email" required="" type="email">
+        </div>
+        <div>
+          <label class="block text-sm font-medium" for="message">Message</label>
+          <textarea class="w-full mt-1 p-3 border border-gray-600 rounded-md bg-gray-700 text-white" id="message" name="message" required="" rows="4"></textarea>
+        </div>
+        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-md" type="submit">Send Message</button>
+      </form>
+      <div class="mt-8 text-center">
+        <p>Or connect with me:</p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a class="text-white hover:text-gray-300" href="https://linkedin.com/in/fajararahman11/">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a class="text-white hover:text-gray-300" href="https://github.com/ujeeg">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-6">
+  <div class="container mx-auto px-4 text-center">
+    <p>&copy; 2023 Data Engineer Portfolio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+</body>
+</html>

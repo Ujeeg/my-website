@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETL NY Taxi Data with Prefect - Data Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins bg-gray-100 text-gray-800">
+
+<nav class="bg-white shadow-md py-4">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <a class="text-2xl font-bold text-gray-800" href="/home">My Portfolio</a> 
+    <div class="space-x-6">
+      <a class="hover:text-blue-500" href="/home#about">About</a>
+      <a class="hover:text-blue-500" href="/home#projects">Projects</a>
+      <a class="hover:text-blue-500" href="/home#skills">Skills</a>
+      <a class="hover:text-blue-500" href="/home#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="py-12"> 
+  <div class="container mx-auto px-4">
+
+    <div class="bg-white rounded-lg shadow-md p-8"> 
+      <h1 class="text-3xl font-bold mb-6 text-blue-500">ETL NY Taxi Data with Prefect</h1> 
+
+      <img alt="ETL Pipeline Diagram" class="w-full h-80 object-cover rounded-lg mb-6" 
+           src="static/images/project_1/RoadMap.png"> 
+
+      <div class="mb-6"> 
+        <h2 class="text-xl font-bold mb-2">Project Goal</h2>
+        <p>
+          To build an efficient and reliable ETL pipeline for processing New York City taxi data, storing it in a local PostgreSQL database, and loading it into Google BigQuery for analysis.
+          You can find the complete source code and documentation on GitHub: <a href="https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect" target="_blank" class="text-blue-500 hover:underline">https://github.com/Ujeeg/ETL-NY-TAXI-DATA-With-Prefect</a>
+        </p>
+      </div>
+
+      <div class="mb-6"> 
+        <h2 class="text-xl font-bold mb-2">ETL Process</h2>
+        <ol class="list-decimal list-inside">
+          <li class="mb-2">
+            **Extract:** Download and decompress NYC taxi data from a GitHub repository in CSV.GZIP format.
+            <img alt="Extract data from Github" class="w-full h-64 object-cover rounded-lg my-4"
+                 src="static/images/project_1/ingest_data_flow.jpg">
+          </li>
+          <li class="mb-2">
+            **Transform:**
+            <ul class="list-disc list-inside ml-6">
+              <li>Convert date and time columns to the correct datetime format.</li>
+              <li>Clean and preprocess the data to handle missing values and ensure data quality.</li>
+            </ul>
+          </li>
+          <li class="mb-2">
+            **Load:**
+            <ul class="list-disc list-inside ml-6">
+              <li>Load the transformed data into a local PostgreSQL database running in a Docker container.</li>
+              <li>Transfer the data from PostgreSQL to Google BigQuery for cloud-based analysis and reporting.</li>
+            </ul>
+            <img alt="Load data to BigQuery" class="w-full h-64 object-cover rounded-lg my-4"
+                 src="static/images/project_1/Load_to_bq_flow.jpg">
+          </li>
+        </ol>
+      </div>
+
+      <div class="mb-6"> 
+        <h2 class="text-xl font-bold mb-2">Technical Highlights</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <h3 class="font-semibold">Technologies</h3>
+            <ul class="list-disc list-inside">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Prefect</li>
+              <li>SQLAlchemy</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold">Databases</h3>
+            <ul class="list-disc list-inside">
+              <li>PostgreSQL</li>
+              <li>Google BigQuery</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold">Infrastructure</h3>
+            <ul class="list-disc list-inside">
+              <li>Docker</li>
+              <li>Google Cloud Platform (GCP)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-6"> 
+        <h2 class="text-xl font-bold mb-2">Challenges and Solutions</h2>
+        <p>
+          Due to limitations with my GCP account, I couldn't use a GCP bucket for staging the data before loading it into BigQuery. 
+          To overcome this, I implemented a direct load from the local PostgreSQL database to BigQuery using the BigQuery Python client library and secure authentication.
+        </p>
+      </div>
+
+      <div> 
+        <h2 class="text-xl font-bold mb-2">Results</h2>
+        <p>
+          This project resulted in a fully automated ETL pipeline orchestrated with Prefect. 
+          The pipeline effectively ingests, processes, and stores NYC taxi data, making it readily available for analysis in both local and cloud environments.
+        </p>
+      </div>
+
+    </div> 
+
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-6">
+  <div class="container mx-auto px-4 text-center">
+    <p>&copy; 2023 Data Engineer Portfolio. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
